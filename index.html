@@ -1,668 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18173290852"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Amigão Atacado e Varejo</title>
 
-  gtag('config', 'AW-18173290852');
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Event snippet for Visualização de página (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18147399728/wQiyCLG16rQcELCwrc1D',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
-
-  <!-- Event snippet for Visualização de página (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18147399728/wQiyCLG16rQcELCwrc1D',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f5f5f5;color:#333}
+header{
+background:#e30613;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
 }
-</script>
-
-
-  <!-- Event snippet for Visualização de página (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18173290852/SczNCLH0mrIcEOTS2dlD',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
-
-  <!-- Event snippet for Visualização de página (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18173290852/SczNCLH0mrIcEOTS2dlD',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
+.logo{font-size:32px;font-weight:800;color:#fff}
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
 }
-</script>
-
-
-
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>MMMARU | Fashion Store</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Montserrat', sans-serif;
-    }
-
-    body{
-      background:#fff;
-      color:#222;
-      overflow-x:hidden;
-    }
-
-    a{
-      text-decoration:none;
-    }
-
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    /* HEADER */
-
-    header{
-      width:100%;
-      position:absolute;
-      top:0;
-      left:0;
-      z-index:999;
-      padding:25px 0;
-    }
-
-    .navbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-
-    .logo{
-      color:#fff;
-      font-size:2rem;
-      font-weight:800;
-      letter-spacing:2px;
-    }
-
-    nav a{
-      color:#fff;
-      margin-left:30px;
-      font-weight:500;
-      transition:.3s;
-    }
-
-    nav a:hover{
-      opacity:.7;
-    }
-
-    /* HERO */
-
-    .hero{
-      height:100vh;
-
-      background:
-      linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.55)),
-      url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1920&auto=format&fit=crop');
-
-      background-size:cover;
-      background-position:center;
-
-      display:flex;
-      align-items:center;
-
-      color:#fff;
-    }
-
-    .hero-content{
-      max-width:650px;
-    }
-
-    .tag{
-      display:inline-block;
-      background:#fff;
-      color:#000;
-      padding:10px 22px;
-      border-radius:50px;
-      font-size:.85rem;
-      font-weight:700;
-      margin-bottom:25px;
-    }
-
-    .hero h1{
-      font-size:4.5rem;
-      line-height:1.1;
-      margin-bottom:25px;
-      font-weight:800;
-    }
-
-    .hero p{
-      font-size:1.15rem;
-      line-height:1.8;
-      color:#f1f1f1;
-      margin-bottom:35px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:18px 35px;
-      background:#fff;
-      color:#000;
-      border-radius:10px;
-      font-weight:700;
-      transition:.3s;
-    }
-
-    .btn:hover{
-      transform:translateY(-5px);
-      background:#000;
-      color:#fff;
-    }
-
-    /* SECTION */
-
-    section{
-      padding:90px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      margin-bottom:60px;
-    }
-
-    .section-title h2{
-      font-size:2.8rem;
-      margin-bottom:15px;
-      font-weight:800;
-    }
-
-    .section-title p{
-      color:#777;
-    }
-
-    /* BENEFITS */
-
-    .benefits{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:30px;
-    }
-
-    .benefit-card{
-      padding:40px 30px;
-      border:1px solid #eee;
-      border-radius:15px;
-      text-align:center;
-      transition:.3s;
-    }
-
-    .benefit-card:hover{
-      transform:translateY(-10px);
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
-    }
-
-    .benefit-card h3{
-      margin:20px 0;
-      font-size:1.3rem;
-    }
-
-    /* PRODUCTS */
-
-    .products{
-      background:#f8f8f8;
-    }
-
-    .product-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:30px;
-    }
-
-    .product{
-      background:#fff;
-      border-radius:15px;
-      overflow:hidden;
-      transition:.3s;
-    }
-
-    .product:hover{
-      transform:translateY(-10px);
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
-    }
-
-    .product img{
-      width:100%;
-      height:380px;
-      object-fit:cover;
-    }
-
-    .product-content{
-      padding:25px;
-    }
-
-    .product-content h3{
-      margin-bottom:12px;
-      font-size:1.3rem;
-    }
-
-    .price{
-      margin-top:15px;
-      font-size:1.1rem;
-      font-weight:700;
-    }
-
-    /* TESTIMONIAL */
-
-    .testimonial{
-      background:#fafafa;
-      padding:35px;
-      border-radius:15px;
-      margin-bottom:25px;
-    }
-
-    .testimonial p{
-      line-height:1.8;
-      color:#555;
-      margin-bottom:15px;
-    }
-
-    /* CTA */
-
-    .cta{
-      background:
-      linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-      url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1920&auto=format&fit=crop');
-
-      background-size:cover;
-      background-position:center;
-
-      color:#fff;
-      text-align:center;
-      padding:120px 20px;
-    }
-
-    .cta h2{
-      font-size:3rem;
-      margin-bottom:20px;
-    }
-
-    .cta p{
-      max-width:700px;
-      margin:auto;
-      line-height:1.8;
-      color:#ddd;
-      margin-bottom:35px;
-    }
-
-    /* FOOTER */
-
-    footer{
-      background:#111;
-      color:#999;
-      text-align:center;
-      padding:50px 20px;
-    }
-
-    footer p{
-      margin-bottom:10px;
-    }
-
-    .legal{
-      margin-top:20px;
-      color:#666;
-      font-size:.9rem;
-    }
-
-    @media(max-width:768px){
-
-      .hero h1{
-        font-size:2.8rem;
-      }
-
-      nav{
-        display:none;
-      }
-
-      .section-title h2{
-        font-size:2rem;
-      }
-
-      .cta h2{
-        font-size:2rem;
-      }
-
-    }
-
-  </style>
-
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:#fff;
+}
+.hero-content{max-width:700px}
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+.btn{
+background:#ffd400;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#000;
+font-weight:700;
+}
+.section{
+padding:90px 8%;
+}
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+.title h2{
+font-size:42px;
+color:#e30613;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.card h3{
+margin-bottom:15px;
+color:#e30613;
+}
+.contact{
+background:#222;
+color:#fff;
+}
+footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+@media(max-width:768px){
+.hero h1{font-size:40px}
+}
+</style>
 </head>
-
 <body>
 
 <header>
+<div class="logo">AMIGÃO</div>
 
-  <div class="container navbar">
-
-    <div class="logo">
-      MMMARU
-    </div>
-
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Coleção</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-    </nav>
-
-  </div>
-
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#segmentos">Segmentos</a>
+<a href="#empresa">Empresa</a>
+<a href="#contato">Contato</a>
+</nav>
 </header>
 
 <section class="hero">
 
-  <div class="container">
+<div class="hero-content">
 
-    <div class="hero-content">
+<h1>Atacado e Varejo de Armarinho, Papelaria e Utilidades</h1>
 
-      <span class="tag">
-        NOVA COLEÇÃO 2026
-      </span>
+<p>
+Mais de 44 anos oferecendo variedade, qualidade e preços competitivos para toda a região.
+</p>
 
-      <h1>
-        MODA MINIMALISTA COM PRESENÇA
-      </h1>
+<a href="#contato" class="btn">Fale Conosco</a>
 
-      <p>
-        Peças sofisticadas, elegantes e modernas para quem quer vestir estilo sem exagero.
-      </p>
-
-      <a href="#" class="btn">
-        EXPLORAR COLEÇÃO
-      </a>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section>
+<section class="section" id="segmentos">
 
-  <div class="container">
+<div class="title">
+<h2>Nossos Segmentos</h2>
+</div>
 
-    <div class="section-title">
+<div class="grid">
 
-      <h2>
-        POR QUE ESCOLHER A MMMARU?
-      </h2>
+<div class="card">
+<h3>Armarinho</h3>
+<p>Linhas, fitas, botões, zíperes e aviamentos.</p>
+</div>
 
-      <p>
-        Moda premium feita para destacar personalidade.
-      </p>
+<div class="card">
+<h3>Papelaria</h3>
+<p>Materiais escolares e de escritório.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Tecidos</h3>
+<p>Grande variedade para costura e confecção.</p>
+</div>
 
-    <div class="benefits">
+<div class="card">
+<h3>Cama Mesa e Banho</h3>
+<p>Produtos para casa e decoração.</p>
+</div>
 
-      <div class="benefit-card">
+<div class="card">
+<h3>Brinquedos</h3>
+<p>Artigos recreativos para todas as idades.</p>
+</div>
 
-        <h3>
-          ✨ Design Moderno
-        </h3>
+<div class="card">
+<h3>Eletrodomésticos</h3>
+<p>Equipamentos e acessórios para o lar.</p>
+</div>
 
-        <p>
-          Estilo contemporâneo inspirado nas maiores tendências internacionais.
-        </p>
-
-      </div>
-
-      <div class="benefit-card">
-
-        <h3>
-          🖤 Qualidade Premium
-        </h3>
-
-        <p>
-          Materiais selecionados para garantir conforto e sofisticação.
-        </p>
-
-      </div>
-
-      <div class="benefit-card">
-
-        <h3>
-          🚚 Envio Rápido
-        </h3>
-
-        <p>
-          Entrega segura para todo o Brasil.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section class="products">
+<section class="section" id="sobre">
 
-  <div class="container">
+<div class="title">
+<h2>Sobre Nós</h2>
+</div>
 
-    <div class="section-title">
+<div class="grid">
 
-      <h2>
-        PEÇAS EM DESTAQUE
-      </h2>
+<div class="card">
+<h3>Fundação</h3>
+<p>08 de fevereiro de 1982.</p>
+</div>
 
-      <p>
-        Os modelos favoritos da coleção.
-      </p>
+<div class="card">
+<h3>Situação</h3>
+<p>Empresa ativa e optante pelo Simples Nacional.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Porte</h3>
+<p>Empresa de Pequeno Porte.</p>
+</div>
 
-    <div class="product-grid">
-
-      <div class="product">
-
-        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop">
-
-        <div class="product-content">
-
-          <h3>
-            Blazer Premium
-          </h3>
-
-          <p>
-            Elegância moderna com acabamento sofisticado.
-          </p>
-
-          <div class="price">
-            R$ 289,90
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="product">
-
-        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop">
-
-        <div class="product-content">
-
-          <h3>
-            Vestido Minimal
-          </h3>
-
-          <p>
-            Sofisticação e conforto para qualquer ocasião.
-          </p>
-
-          <div class="price">
-            R$ 219,90
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="product">
-
-        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1000&auto=format&fit=crop">
-
-        <div class="product-content">
-
-          <h3>
-            Conjunto Casual Chic
-          </h3>
-
-          <p>
-            Estilo refinado para o dia a dia.
-          </p>
-
-          <div class="price">
-            R$ 249,90
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section>
+<section class="section" id="empresa">
 
-  <div class="container">
+<div class="title">
+<h2>Dados Empresariais</h2>
+</div>
 
-    <div class="section-title">
+<div class="grid">
 
-      <h2>
-        CLIENTES SATISFEITAS
-      </h2>
+<div class="card">
+<h3>Razão Social</h3>
+<p>O Amigão Atacado e Varejo de Miudezas LTDA</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>CNPJ</h3>
+<p>27.691.971/0001-81</p>
+</div>
 
-    <div class="testimonial">
+<div class="card">
+<h3>Inscrição Estadual</h3>
+<p>80.568.51-7</p>
+</div>
 
-      <p>
-        “As roupas são lindas e a qualidade é impecável. Virei cliente fiel.”
-      </p>
+<div class="card">
+<h3>Administrador</h3>
+<p>Bruno Novaes de Oliveira Gonçalves</p>
+</div>
 
-      <strong>
-        — Mariana Alves
-      </strong>
+<div class="card">
+<h3>Principal Atividade</h3>
+<p>Comércio varejista de artigos de armarinho.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Localização</h3>
+<p>Volta Redonda - RJ</p>
+</div>
 
-    <div class="testimonial">
-
-      <p>
-        “O estilo minimalista da MMMARU é simplesmente perfeito.”
-      </p>
-
-      <strong>
-        — Fernanda Costa
-      </strong>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<section class="cta">
+<section class="section contact" id="contato">
 
-  <div class="container">
+<div class="title">
+<h2 style="color:white">Contato</h2>
+</div>
 
-    <h2>
-      DESCUBRA SUA NOVA VERSÃO
-    </h2>
+<div class="grid">
 
-    <p>
-      Moda sofisticada para mulheres que querem presença, elegância e autenticidade.
-    </p>
+<div class="card">
+<h3>Endereço</h3>
+<p>
+Rua Major Aguiar, 56<br>
+Centro<br>
+Volta Redonda - RJ<br>
+CEP 27253-450
+</p>
+</div>
 
-    <a href="#" class="btn">
-      COMPRAR AGORA
-    </a>
+<div class="card">
+<h3>Telefones</h3>
+<p>
+(24) 3346-1348<br>
+(24) 3343-3201<br>
+(24) 3347-0991
+</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>E-mail</h3>
+<p>real@contabilidadereal.com.br</p>
+</div>
+
+</div>
 
 </section>
 
 <footer>
-
-  <p>
-    MMMARU © 2026 — Todos os direitos reservados.
-  </p>
-
-  <p>
-    CNPJ: 41.842.117/0001-63
-  </p>
-
-  <p>
-    suporte@mmmaru.com
-  </p>
-
-  <div class="legal">
-
-    <p>
-      Política de Privacidade | Termos de Uso
-    </p>
-
-    <p>
-      Site seguro e protegido.
-    </p>
-
-  </div>
-
+<p>© 2026 O Amigão Atacado e Varejo de Miudezas LTDA</p>
+<p>CNPJ 27.691.971/0001-81</p>
 </footer>
 
 </body>
